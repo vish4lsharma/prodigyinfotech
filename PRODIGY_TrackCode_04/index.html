@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <a href="#" class="logo">Portfolio</a>
+        <nav class="navbar">
+            <a href="index.html" style="--i:1" class="active">Home</a>
+            <a href="#about" style="--i:2">About</a>
+            <a href="#Skills" style="--i:3">Skills</a>
+            <a href="WhatsApp Image 2024-05-19 at 03.36.30_018da47c.jpg" style="--i:4">Resume</a>
+            <a href="#Contact" style="--i:5">Contact</a>
+            <a href="Project.html" oncontextmenu="return false;" style="--i:5">Project</a>
+
+        </nav>
+    </header>
+    <section class="home">
+        <div class="home-content">
+            <h3>Hello, It's Me</h3>
+            <h1>Vishal Sharma</h1>
+            <h3>And I'm a <span class="text"></span></h3>
+
+            <div class="home-sci">
+                <a href="https://www.facebook.com/profile.php?id=100080465301539" style="--i:7">
+                    <img
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAR1JREFUSEvt1j1KA0EYxvH/40dnEUeb4AFESOMNIniBtDbaRA9h7w0UlYB23sBONEdIoeAFxA+SQS0lvhIIMgRkd2QzMbLbzsz72/fZ4WXFhB5NyGVKYbNZXlnHWEC80+cZxyPSR1aSv+/YWwPjEKiOILc41cYDe9vBOPuh+Jhgs3k8D8ByWthbHeN6BL1HXPLJGxp8Zx0VH7W3bYzz78LiiQorSP0sLFyPv1xd20WcBEXaONVj0MHeeLhne8BxAN3gtPHP4J7dAWs5u7rAaStrb76o4+ADnPbTw0aTJbXSwzNsUtFVMXBYpWtNxGn6W13CkGiAlFGXUWdNjuF6vln9JwbIi1WZYzV4F8+iOjkbDX5cYk8UtD8+6mmHvwBjQ3AfZWS5AQAAAABJRU5ErkJggg==" /></a>
+                <a href="https://www.instagram.com/vishal_sharma_178/" style="--i:8"><img
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAA6tJREFUSEvNlluIVWUUx3/rzGkUK3F/e8TJS4qooVDmaC+GJtVbxogEBpFdQB96s6RAVLwgBRX5EvSgThkEPZhh6otCpILijBdCScIexBvmOXsPpiLVPivXd44z57L3OTO9jN/LgfN9e/3X+q//uggjdGSEcHnIgW/qE7QxA6GtKUNKQsJFxsv1VkxmR/yndpLnU+AVIGhlqO4+Bg6Q8GGWE+nAkRrY98CjFYN3gDNA0sKBdqALGFV5dxtYgZOD9d81Al/TMYzmD6ATpQflK0JOIdIKtGxbNU8/i1A2A4uAa9xjJhPlbjV4I3BRNyNs9BE7eX2YFEOsbwJCILuJ9GdgiXcilE3NgSO9AkziHzqZIDeGBWygym7/TYl3aOMMylngKk4mZwOXBWWKvICT2amgBZ1Ejm5goRELHCdhrxdRrCtRvilTzruE0kOkfwGPkWc8Y6XwwGYt1f3aRYlTwDGcWH5qT1FXI3wGPF53cwtlDaHsoqBvIwjKOTqkl0hNL9OBp3FyLh04UgM74kvBydIa40X9oAJqINvJcZoSjwDPIKzxUdlvINtrvov0Vw+qLCSU4+nABX2ZHIdQ9hLK8gEDsc5D6UUokDCfDrlaZ/xJ4LRnQukilPMD95Fajud6hTs51hxY2EMgrw18XNQtCBtQ3ieUL1JzH+lHwCfAepxsqwI2h+YBi3FyNCvHL1HicEPEkf4EGPVLcXIgFTjW5Sh7qHc6UtNMF8ISAvklHThWqzmrvf04ebXK6x/vd65uhG4C2Tcs4KJaihYgvEggZtufWlUPAu/DiZVM+cS60TcBZS2hfJ5B9TrAKF6Hk4+r0tSHMB/hBQIx4TYFro24qFMQLgB3KfFsg7hinYr6Xp4n4amawTAkcUX6vK/htHKK9D3gS+B2pZz6KNGOeMVaOY1BWUUoO+oUbwqfQ47nGCd9WRFb2ZgKsxrIKgSjOq2BmOJ3NqRhsIHMxYnVdArVRZ2McBm4hJNpqbkst8xlgLFjE+sECT+kzl3VHDE2lUahTCEUmwMpwKptxPT7LpQwcSibRKpzD/7s1wWU6PXpCRhXPVobx2KsO32Dh+9w8kZTw60uIzUV22zuIRSzOXAagW9pB//ye2XdOYiyFcdJREqtcPz94CKwtZKOmDyzqieTPUtffWJ9C+XrKqD/u/oYwkoC+bbe6exlL9bFvjeDdbDckKIdfGTs7PcVUNU0mlNdj3BDJ9BO+lKQ5c3f/NZqe3nIF/ph8jyU5yMW8X/oiVkudBafIgAAAABJRU5ErkJggg==" /></a>
+                <a href="https://github.com/vish4lsharma" style="--i:9"><img
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAA2hJREFUSEvFlt2LVHUYxz/fUZZeMOac2U1d2dSlAl+wMHtR+gPEQC0vugjXDDWvSoS6CArEIEgxIpBSfIm6CMEXEISuu8hcpbRUEDRNm2B3z8yKSubuzJPnnJn1nDNzZs+sF/uDuZjf73mez/P8zvPyE5O0NElc2gOb5SjxEqIXYyYgxD/AVRxOIlWyBpINXLbZGB8Ba4BCivEy4jDiM/K6Mp4DrcFmHZT4GPEh0DGesdr5KPA5DtuQ7qXppIMHbSY5jiNeyAiMi4l+RllNl4rN9JuDyzYH42dgxoSgD5SKiGU4upa00wgeNocKvyCeqQlfDpIIejM6cQ3xH8azNfmLwFJc3YzqN4I9O4hYNyZkLKegHxm2xVTYQY4FGL4x/zeKsQAxD7hMla10qp+SvQr8FAHtxdWmdPCQvUyOk7HIxFwcXc0YbSg2YDOYGpRZfRnGQgq6UN+IR1yy74G3EuDncXS2LbBn8xHnE3b24WhDI9hsCmWGgHzEzwE6WMg0DbYJfgIFn6I7olfE1axG8LAtoUp/wsv3cPRVW9C6sGebEN/EdKvMp1O+Q5GWWbbVGEdjgjl6yevPCYEHrZsp/J3QXYmr43GwZxsQe2OCFbrpUjRJsvtQtMd4hDtpN/gguTzbiNiTsPwcrs5lp0UkPetB/BXTNT6goJ3Jq34D43DCw3dwdGBC4LKtwjiWsPc2jr6Ng4dsHjnG6qymcAJXr00I7NkRxOuJnHmRvE7Hwf6/kvnlFB97og9H37UFL1sfRhBZZN3GIV+f2ckG8jXwLjCCcRaxJFAU+6nwCZ1KZmncdDhctgF9DY4aBylofX0/Do52HPE+xq8QlJh/C1XEGYxduPohZtiz5cCniMWxEo3TF+Hq9+Zgf9ezLxBbAgFjKTmmYxwaewiIxhZ6y7oYYSD1cxhfUlBos7Yap9N1e5THg0GxCAiTyzd8j7WIu7ja3RRQMv8zRFtkXew37rCMHv3bGhwm2VOIUxjTgc047EGylglWMr/DzUnIFDFeoaDrSd30p0+YKCcgmLW3gUtAz/2In0yJ2G8WPZGzPzBWNIOG+dpqhW3Pz9KtQM7PAFx1poD91uo/lUaAHdxkO3N1N818tudt2P42A0/j6s0UsF+3N6iye9yyGzfiltfxcIfZIn44RlPtSQP/D06mBC7aSaNfAAAAAElFTkSuQmCC" /></a>
+                <a href="https://www.linkedin.com/in/vishal-sharma-688080247/" style="--i:10"><img
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAclJREFUSEvtlrFrVEEQh7/fM0UIyN1bkxRCCpU0lgpqEYMJWFmmEwTBIqIIKZQIIhELES20COofEEgXGxtRSdBOMNhZmGhj7O7dBVMkSN6YHIq3Gy6HZB8nJFvOzs735vdmdla0aalNXP4zcNUuYvSwzht6NF+EKlszzuwdMNAAu4DTVGy4D85sFHgWQD7hdLRYcMUmNv76nQCygtP+YsGZnQbeBpBpnM4XC96Mntll4CZwEOM561yiVyvFg2MTmsSL28fL5vhJP2KJA/q2XQ4+uGaHyPkSHHiC09W6rWLXEQ+9fZECgxgTwLGGvR+IlySMUlIWfkQM8BjG422yWyDhBGVVG312DoZVoLNFadzC6V5s8Ga8HGMR8b0uO1tmwDxOx2ODV0kYoKwP9cBVO4PxCuhoAOWkdCGt/bHFkHoSp2ue1Jm9AM55tn30U9JCPLAYIdWMB6nYI8SYZ8s5SbfexwPnnKVbrz1I1W5j3A3abohUc83Ah8lZDCr0KU5X6rbMbgAPgoDDpJoNpB7fqPT7e+A9qf/WQM12W3F9tU7KnPLaIGGJkj7/Hot9JBwJ2u0jqWrBBdLSL+5DoMWIaj4k/uHgTl3blvEvad7zHxJVA4wAAAAASUVORK5CYII=" /></a>
+            </div>
+            <a href="#about" class="btn-box">More about me</a>
+        </div>
+    </section>
+
+
+
+
+    <span class="home-imgHover"></span>
+    </section>
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="my.png">
+        </div>
+        <div class="about-text">
+            <h2> About <span>Me</span></h2>
+            <h4>Software engineer</h4>
+            <a href="https://www.linkedin.com/in/vishal-sharma-688080247/" class="btn-box">More About Me</a>
+            <p>Hello! I'm Vishal Sharma, pursuing B.Tech in Computer Science from Dr. A.P. J. Abdul Kalam Technical
+                University Lucknow,
+                I'm passionate about software engineering and eager to contribute to impactful tech solutions.
+            </p>
+        </div>
+    </section>
+
+    <section>
+        <div class="service" id="Skills">
+            <div class="container">
+                <h1 class="sub-title">My <span>skills</span></h1>
+                <div class="services-list">
+                    <div>
+                        <i class='bx bxl-c-plus-plus' style='color:#00eeff'></i>
+                        <h2>C language</h2>
+                        <p>
+                            Proficient in C language, with expertise in data structures, algorithms, and low-level
+                            programming, enabling me to develop efficient and robust software solutions. My solid
+                            understanding of C language fundamentals empowers me to tackle complex programming
+                            challenges with precision and creativity.</p>
+                        <a href="https://www.linkedin.com/in/vishal-sharma-688080247/" class="read">Learn more</a>
+                    </div>
+                    <div>
+                        <i class='bx bxl-java' style='color:#00eeff'></i>
+                        <h2>Java</h2>
+                        <p>Skilled in Java programming, adept at developing scalable and high-performance applications,
+                            leveraging advanced features like multithreading and exception handling. With a deep
+                            understanding of Java's object-oriented principles, I excel in crafting elegant and
+                            maintainable code solutions for diverse software projects.</p>
+                        <a href="https://www.linkedin.com/in/vishal-sharma-688080247/" class="read">Learn more</a>
+                    </div>
+                    <div>
+                        <i class='bx bxl-java' style='color:#00eeff'></i>
+                        <h2>DSA</h2>
+                        <p>Proficient in Data Structures and Algorithms, adept at designing efficient algorithms and
+                            implementing complex data structures to solve challenging computational problems. With a
+                            solid grasp of fundamental DSA concepts, I excel in optimizing code performance and crafting
+                            elegant solutions for diverse software engineering challenges.</p>
+                        <a href="https://www.linkedin.com/in/vishal-sharma-688080247/" class="read">Learn more</a>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <div class="skills_section" id="Skills">
+        <div class="skills_head">
+
+            <p></p>
+        </div>
+
+        <div class="skills_main">
+            <div class="skill_bar">
+                <div class="info">
+                    <p>HTML</p>
+                    <P>90%</P>
+                </div>
+                <div class="bar">
+                    <span class="html"></span>
+                </div>
+            </div>
+            <div class="skill_bar">
+                <div class="info">
+                    <p>CSS</p>
+                    <P>85%</P>
+                </div>
+                <div class="bar">
+                    <span class="css"></span>
+                </div>
+            </div>
+            <div class="skill_bar">
+                <div class="info">
+                    <p>Javascript</p>
+                    <P>40%</P>
+                </div>
+                <div class="bar">
+                    <span class="Javascript"></span>
+                </div>
+            </div>
+            <div class="skill_bar">
+                <div class="info">
+                    <p>Python</p>
+                    <P>80%</P>
+                </div>
+                <div class="bar">
+                    <span class="python"></span>
+                </div>
+            </div>
+            <div class="skill_bar">
+                <div class="info">
+                    <p>C</p>
+                    <P>88%</P>
+                </div>
+                <div class="bar">
+                    <span class="c"></span>
+                </div>
+            </div>
+            <div class="skill_bar">
+                <div class="info">
+                    <p>communication</p>
+                    <P>90%</P>
+                </div>
+                <div class="bar">
+                    <span class="com"></span>
+                </div>
+            </div>
+            <div class="skill_bar">
+                <div class="info">
+                    <p>Flask</p>
+                    <P>65%</P>
+                </div>
+                <div class="bar">
+                    <span class="flask"></span>
+                </div>
+            </div>
+            <div class="skill_bar">
+                <div class="info">
+                    <p>English/Hindi</p>
+                    <P>90%</P>
+                </div>
+                <div class="bar">
+                    <span class="lang"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+
+</div>
+</section>
+<!-- project -->
+
+
+<section class="contact" id="Contact">
+    <div class="contact-header">
+        <h3 id="co-title">Contact Me</h3>
+        <h1 id="co-text">Reach out for a new project or to say hello</h1>
+    </div>
+
+    <div class="contact-content">
+        <div class="contact-form">
+            <h3 id="form-title">Send me a message</h3>
+            <form action="vishalshankhdhar7@gmail.com" method="post" enctype="text/plain">
+                <fieldset>
+                    <div class="form-field">
+                        <input name="name" type="text" id="name" placeholder="Your Name"></input>
+                    </div>
+                    <div class="form-field">
+                        <input name="email" type="email" id="email" placeholder="Your Email"></input>
+                    </div>
+                    <div class="form-field">
+                        <input name="Subject" type="text" id="subject" placeholder="Subject"></input>
+                    </div>
+                    <div class="form-field">
+                        <textarea name="message" type="text" id="message" placeholder="Your Message"></textarea>
+                    </div>
+                </fieldset>
+                <input id="form-btn" type="submit" value="send">
+            </form>
+        </div>
+
+        <div class="contact-info">
+            <h3>Email Me At </h3>
+            <a href="vishalshankhdhar7@gmail.com">
+                <p>vishalshankhdhar7@gmail.com</p>
+            </a>
+            <h3>Find Me On </h3>
+            <div class="contact-links">
+                <a href="https://www.facebook.com/profile.php?id=100080465301539" style="--i:7">
+                    <img
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAR1JREFUSEvt1j1KA0EYxvH/40dnEUeb4AFESOMNIniBtDbaRA9h7w0UlYB23sBONEdIoeAFxA+SQS0lvhIIMgRkd2QzMbLbzsz72/fZ4WXFhB5NyGVKYbNZXlnHWEC80+cZxyPSR1aSv+/YWwPjEKiOILc41cYDe9vBOPuh+Jhgs3k8D8ByWthbHeN6BL1HXPLJGxp8Zx0VH7W3bYzz78LiiQorSP0sLFyPv1xd20WcBEXaONVj0MHeeLhne8BxAN3gtPHP4J7dAWs5u7rAaStrb76o4+ADnPbTw0aTJbXSwzNsUtFVMXBYpWtNxGn6W13CkGiAlFGXUWdNjuF6vln9JwbIi1WZYzV4F8+iOjkbDX5cYk8UtD8+6mmHvwBjQ3AfZWS5AQAAAABJRU5ErkJggg==" /></a>
+                <a href="https://www.instagram.com/vishal_sharma_178/" style="--i:8"><img
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAA6tJREFUSEvNlluIVWUUx3/rzGkUK3F/e8TJS4qooVDmaC+GJtVbxogEBpFdQB96s6RAVLwgBRX5EvSgThkEPZhh6otCpILijBdCScIexBvmOXsPpiLVPivXd44z57L3OTO9jN/LgfN9e/3X+q//uggjdGSEcHnIgW/qE7QxA6GtKUNKQsJFxsv1VkxmR/yndpLnU+AVIGhlqO4+Bg6Q8GGWE+nAkRrY98CjFYN3gDNA0sKBdqALGFV5dxtYgZOD9d81Al/TMYzmD6ATpQflK0JOIdIKtGxbNU8/i1A2A4uAa9xjJhPlbjV4I3BRNyNs9BE7eX2YFEOsbwJCILuJ9GdgiXcilE3NgSO9AkziHzqZIDeGBWygym7/TYl3aOMMylngKk4mZwOXBWWKvICT2amgBZ1Ejm5goRELHCdhrxdRrCtRvilTzruE0kOkfwGPkWc8Y6XwwGYt1f3aRYlTwDGcWH5qT1FXI3wGPF53cwtlDaHsoqBvIwjKOTqkl0hNL9OBp3FyLh04UgM74kvBydIa40X9oAJqINvJcZoSjwDPIKzxUdlvINtrvov0Vw+qLCSU4+nABX2ZHIdQ9hLK8gEDsc5D6UUokDCfDrlaZ/xJ4LRnQukilPMD95Fajud6hTs51hxY2EMgrw18XNQtCBtQ3ieUL1JzH+lHwCfAepxsqwI2h+YBi3FyNCvHL1HicEPEkf4EGPVLcXIgFTjW5Sh7qHc6UtNMF8ISAvklHThWqzmrvf04ebXK6x/vd65uhG4C2Tcs4KJaihYgvEggZtufWlUPAu/DiZVM+cS60TcBZS2hfJ5B9TrAKF6Hk4+r0tSHMB/hBQIx4TYFro24qFMQLgB3KfFsg7hinYr6Xp4n4amawTAkcUX6vK/htHKK9D3gS+B2pZz6KNGOeMVaOY1BWUUoO+oUbwqfQ47nGCd9WRFb2ZgKsxrIKgSjOq2BmOJ3NqRhsIHMxYnVdArVRZ2McBm4hJNpqbkst8xlgLFjE+sECT+kzl3VHDE2lUahTCEUmwMpwKptxPT7LpQwcSibRKpzD/7s1wWU6PXpCRhXPVobx2KsO32Dh+9w8kZTw60uIzUV22zuIRSzOXAagW9pB//ye2XdOYiyFcdJREqtcPz94CKwtZKOmDyzqieTPUtffWJ9C+XrKqD/u/oYwkoC+bbe6exlL9bFvjeDdbDckKIdfGTs7PcVUNU0mlNdj3BDJ9BO+lKQ5c3f/NZqe3nIF/ph8jyU5yMW8X/oiVkudBafIgAAAABJRU5ErkJggg==" /></a>
+                <a href="https://github.com/vish4lsharma" style="--i:9"><img
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAA2hJREFUSEvFlt2LVHUYxz/fUZZeMOac2U1d2dSlAl+wMHtR+gPEQC0vugjXDDWvSoS6CArEIEgxIpBSfIm6CMEXEISuu8hcpbRUEDRNm2B3z8yKSubuzJPnnJn1nDNzZs+sF/uDuZjf73mez/P8zvPyE5O0NElc2gOb5SjxEqIXYyYgxD/AVRxOIlWyBpINXLbZGB8Ba4BCivEy4jDiM/K6Mp4DrcFmHZT4GPEh0DGesdr5KPA5DtuQ7qXppIMHbSY5jiNeyAiMi4l+RllNl4rN9JuDyzYH42dgxoSgD5SKiGU4upa00wgeNocKvyCeqQlfDpIIejM6cQ3xH8azNfmLwFJc3YzqN4I9O4hYNyZkLKegHxm2xVTYQY4FGL4x/zeKsQAxD7hMla10qp+SvQr8FAHtxdWmdPCQvUyOk7HIxFwcXc0YbSg2YDOYGpRZfRnGQgq6UN+IR1yy74G3EuDncXS2LbBn8xHnE3b24WhDI9hsCmWGgHzEzwE6WMg0DbYJfgIFn6I7olfE1axG8LAtoUp/wsv3cPRVW9C6sGebEN/EdKvMp1O+Q5GWWbbVGEdjgjl6yevPCYEHrZsp/J3QXYmr43GwZxsQe2OCFbrpUjRJsvtQtMd4hDtpN/gguTzbiNiTsPwcrs5lp0UkPetB/BXTNT6goJ3Jq34D43DCw3dwdGBC4LKtwjiWsPc2jr6Ng4dsHjnG6qymcAJXr00I7NkRxOuJnHmRvE7Hwf6/kvnlFB97og9H37UFL1sfRhBZZN3GIV+f2ckG8jXwLjCCcRaxJFAU+6nwCZ1KZmncdDhctgF9DY4aBylofX0/Do52HPE+xq8QlJh/C1XEGYxduPohZtiz5cCniMWxEo3TF+Hq9+Zgf9ezLxBbAgFjKTmmYxwaewiIxhZ6y7oYYSD1cxhfUlBos7Yap9N1e5THg0GxCAiTyzd8j7WIu7ja3RRQMv8zRFtkXew37rCMHv3bGhwm2VOIUxjTgc047EGylglWMr/DzUnIFDFeoaDrSd30p0+YKCcgmLW3gUtAz/2In0yJ2G8WPZGzPzBWNIOG+dpqhW3Pz9KtQM7PAFx1poD91uo/lUaAHdxkO3N1N818tudt2P42A0/j6s0UsF+3N6iye9yyGzfiltfxcIfZIn44RlPtSQP/D06mBC7aSaNfAAAAAElFTkSuQmCC" /></a>
+                <a href="https://www.linkedin.com/in/vishal-sharma-688080247/" style="--i:10"><img
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAclJREFUSEvtlrFrVEEQh7/fM0UIyN1bkxRCCpU0lgpqEYMJWFmmEwTBIqIIKZQIIhELES20COofEEgXGxtRSdBOMNhZmGhj7O7dBVMkSN6YHIq3Gy6HZB8nJFvOzs735vdmdla0aalNXP4zcNUuYvSwzht6NF+EKlszzuwdMNAAu4DTVGy4D85sFHgWQD7hdLRYcMUmNv76nQCygtP+YsGZnQbeBpBpnM4XC96Mntll4CZwEOM561yiVyvFg2MTmsSL28fL5vhJP2KJA/q2XQ4+uGaHyPkSHHiC09W6rWLXEQ+9fZECgxgTwLGGvR+IlySMUlIWfkQM8BjG422yWyDhBGVVG312DoZVoLNFadzC6V5s8Ga8HGMR8b0uO1tmwDxOx2ODV0kYoKwP9cBVO4PxCuhoAOWkdCGt/bHFkHoSp2ue1Jm9AM55tn30U9JCPLAYIdWMB6nYI8SYZ8s5SbfexwPnnKVbrz1I1W5j3A3abohUc83Ah8lZDCr0KU5X6rbMbgAPgoDDpJoNpB7fqPT7e+A9qf/WQM12W3F9tU7KnPLaIGGJkj7/Hot9JBwJ2u0jqWrBBdLSL+5DoMWIaj4k/uHgTl3blvEvad7zHxJVA4wAAAAASUVORK5CYII=" /></a>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+<script src="main.js"></script>
+
+
+
+<footer>
+    <p id="foot">
+        &copy; 2021, Made with ❤ by
+        <a id="fot" href="https://www.linkedin.com/in/vishal-sharma-688080247/" target="_blank">vishal sharma
+        </a>
+    </p>
+</footer>
+</body>
+
+</html>
