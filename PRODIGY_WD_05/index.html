@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Indie Flower', cursive;
+        }
+
+        body {
+            text-align: center;
+            margin: 20px;
+        }
+
+        .container-fluid {
+            background-image: url(image.png);
+            background-size: cover;
+            height: auto;
+        }
+
+       
+
+        .header {
+     
+            background-size: cover;
+            color: rgb(12, 11, 6);
+            text-align: center;
+            padding: 5rem;
+        }
+
+        .header h1 {
+            font-weight: 500;
+            font-size: 34px;
+            color: #e4eff7;
+        }
+
+        .header p {
+            margin-top: 1rem;
+            font-weight: 600;
+            font-size: 1.5rem;
+            color: #e4eff7;
+        }
+
+        a:hover, a:visited, a:link, a:active {
+            text-decoration: none;
+            color: #d0e5f5;
+        }
+
+        .main {
+            background-color: #212121;
+        }
+
+        .inputs {
+            padding: 6rem 0 2rem 0;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+        }
+
+        .inputs input[type="text"] {
+            height: 3.5rem;
+            width: 30rem;
+            background: #212121;
+            font-weight: bold;
+            font-size: 1.5rem;
+            border: none;
+            background-color: transparent;
+            border-bottom: solid 1px #16a864;
+            color: #16a864;
+            border-radius: 2px;
+            margin-right: 4px;
+        }
+
+        .inputs button {
+            height: 3.5rem;
+            width: 6.5rem;
+            background: #16a864;
+            font-weight: bold;
+            color: ghostwhite;
+            font-size: 1.5rem;
+            border: none;
+            border-radius: 2px;
+        }
+
+        .display {
+            text-align: center;
+            color: #16a864;
+        }
+
+        .wrapper {
+            margin: 0 9rem;
+            width: 50%;
+            background-color: #212121;
+            height: 40vh;
+            margin: 50px auto;
+            border-radius: 2px;
+        }
+
+        .wrapper h2 {
+            padding: 5px 0;
+            text-align: center;
+        }
+
+        .wrapper p {
+            text-align: center;
+            margin: 10px 0;
+            font-size: 20px;
+        }
+
+        .weather-info {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row offset-sm-1">
+            <section class="main col-md-7 col-sm-10">
+                <header class="header">
+                    <h1>Weather Details</h1>
+                    <p>Get the latest weather updates</p>
+                </header>
+                <section class="inputs">
+                    <input type="text" placeholder="Enter any city..." id="cityinput">
+                    <button id="add">Submit</button>
+                </section>
+                <section class="display">
+                    <div class="wrapper weather-info" id="weatherInfo">
+                        <h2 id="cityoutput"></h2>
+                        <p id="description"></p>
+                        <p id="temp"></p>
+                        <p id="wind"></p>
+                    </div>
+                </section>
+            </section>
+        </div>
+    </div>
+    <script type="text/javascript" src="./main.js"></script>
+</body>
+</html>
